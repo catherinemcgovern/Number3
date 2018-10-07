@@ -20,6 +20,8 @@ namespace Buffteks
 
         public DbSet<Student> Students { get; set; }     
         public DbSet<Team> Team { get; set; }        
+        public DbSet<Organization> Organizations { get; set; }   
+
         public DbSet<Advisor> Advisor { get; set; }   
         public DbSet<Project> Project { get; set; }        
 

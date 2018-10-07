@@ -21,7 +21,7 @@ namespace Buffteks
         //organization
         public int OrganizationId { get; set; }
         public ICollection<Project> Project{ get; set; }
-        public string organization { get; set; }
+            public string Name { get; set; }
 
 
         

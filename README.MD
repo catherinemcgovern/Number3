@@ -1,1 +1,3 @@
-My readme - yay!
+Spoiler Alert - No Reading Tonight - just building the data base.
+Please run program before starting ... I haven't automated the deleting of the database and the subsequent building thereof...
+Database (such as it is) should build with no problems. I hope!
