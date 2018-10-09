@@ -1,3 +1,3 @@
-Spoiler Alert - No Reading Tonight - just building the data base.
-Please run program before starting ... I haven't automated the deleting of the database and the subsequent building thereof...
-Database (such as it is) should build with no problems. I hope!
+Run the app to create the database then use the menu options to see the content contained therein.
+
+Have fun!

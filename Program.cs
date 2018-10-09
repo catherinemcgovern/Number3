@@ -8,13 +8,40 @@ using System.Text;
 
 using System;
 
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Sqlite;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.Extensions.Logging;
+
 namespace Buffteks
 {
      class Program
     {
         static void Main(string[] args)
         {
-            using(var db = new AppDbContext())
+            
+            /*
+            
+
+            
+            
+             */
+
+            //THis is where I'm going to add code to write out my commands
+
+
+
+
+
+
+
+            //Here ends the command code
+            
+
+
+            
+                        using(var db = new AppDbContext())
             {
                 try
                 {
@@ -240,8 +267,42 @@ namespace Buffteks
                     Console.WriteLine(exp.Message);
                 }
 
-                
+                // putting menue stuff here
+                Console.WriteLine("Welcome to the Bufteks Datatbase");
+
+                Console.WriteLine("--------------------------------------------");
+
+                Console.WriteLine("Please select a menu option below:");
+                Console.WriteLine("--------------------------------------------");
+
+                 Console.WriteLine(
+                "Commands: l (list), e (exit)");
+
+                                Console.WriteLine("--------------------------------------------");
+
+            {
+                Console.Write("> ");
+                var command = Console.ReadLine();
+                switch (command)
+                {
+                    case "l":
+                        Commands.ListAll();
+                        break;
+                        
+                    case "e":
+                        return;
+                    default: 
+                        Console.WriteLine("Unknown command.");
+                        break;
+                }
+
+            }
+
+
+
+                //end of menu stuff
             }
         }
     }
 }
+
